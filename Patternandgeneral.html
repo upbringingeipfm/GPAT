@@ -1,18 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title> Pharma Vision Layout </title>
+  <title> Entrance exams </title>
+</head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
 
-/*Style the header*/
-.header {background-color: #f1f1f1;
+<style>
+{
+padding:0;
+margin:0;
+}
+
+
+
+body
+
+{
+background-image: url(Background.jpg);
+background-color: #cccccc;
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.header {background-color:lightblue ;
 padding: 20px;
 text-align: center;
 }
+.menu-bar
+{
+background: rgb(50, 100, 0);
+text-align: center;
+}
+.menu-bar ul
+{
+display: inline-flex;
+list-style: none;
+color: #fff
+}
+.menu-bar ul li
+{
+width: 90%;
+margin: 5px;
+padding: 10px;
+}
+.menu-bar ul li a
+{text-decoration: none;
+color: #fff}
+.active, .menu-bar ul li:hover
+{
+background: #2bab0d;
+border-radius: 3px;
+}
+.menu-bar .fa
+{ margin-left: 8px;
+}
 
-body
+#mySidenav a {
+position: absolute;
+left: -140px;
+transition: 0.3s;
+padding: 15px;
+width: 150px;
+text-decoration: none;
+font-size: 20px;
+color: white;
+border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover {
+left: 0;
+}
+#about {
+top: 270px;
+background-color: #f44336;
+}
+#blog {
+top: 370px;
+background-color: #555;
+}
+#projects {
+top: 470px;
+background-color: #2196F3;
+}
+#contact {
+top: 570px;
+background-color: #4CAF50;
+}
+
+
+h3
+{background-color: Pink;
+color: Black;
+width: 80%;
+margin: 80px;
+padding:20px;}
+ul.a
+{background-color: Pink;
+color: Blue;
+width: 80%;
+margin: 80px;
+padding:20px;}
+
+ul.b
+{background-color: lightblue;
+color: Red;
+width: 75%;
+margin-left: 50px;
+padding: 20px;
+}
+
+ul.c
+{background-color: lightgreen;
+color:Black;
+width: 70%;
+margin-left: 50px;
+padding:20px ;
+}
+
 {
   background-color: lightblue;
 }
@@ -20,24 +127,24 @@ body
 h1 {background-color: White;
 color: black;
 align: center
-width: 500px;
+width: 60%x;
 padding-left: 20px}
 
 h2 {
 color: black;
-width: 500px;
+width: 60%;
 margin-left: 200px;
 padding-left: 20px}
 
 p {background-color: #edf9fa;
 color: black;
-width: 500px;
+width: 70%;
 margin-left: 50px;
 padding-left: 20px}
 
-li {background-color: #fad482;
+li {background-color: ;
 color: black;
-width: 500px;
+width: 70%;
 margin-left: 70px;
 padding-left: 20px}
 
@@ -59,37 +166,32 @@ background-color: #f1f1c1;}
 body { margin: 0;
 }
 
-/* Style the top navigation bar */
-.topnav {
-overflow: hidden;
-background-color: #333;
-}
-/* Style the topnav links */
-.topnav a {
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-}
-/* Change color on hover */
-.topnav a:hover {
-background-color: #ddd;
-color: Blue;
-}
-
 </style>
-</head>
 <body>
-<div class="header">
-  <h1> Pharma Vision-GPAT-Pattern  </h1>
-Before starting your preparation It's important to know for which exam you are preparing.
+
+  <div class="header">
+    <h1> Pharma Vision-GPAT-Pattern  </h1>
+  Before starting your preparation It's important to know for which exam you are preparing.
+  </div>
+<div class="menu-bar">
+  <ul>
+
+  <li ><a href="Patternandgeneral.html"> Pattern</a> </li>
+  <li><a href="Syllabusandcontent.html"> Syllabus and content</a> </li>
+  <li><a href="HOTtopics.html"> HOT Topics</a></li>
+  <li><a href="GPATpracticeQuestions.html"> Practice Quetions</li>
 </div>
-<div class="topnav">
-<a href="index.html"> Main page </a>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="meliorate.html" id="about">Aptitude </a>
+  <a href="pharmavision.html" id="blog">Gov. Exam</a>
+  <a href="smallbreak.html" id="projects">MBA EE</a>
+  <a href="thinkingpot.html" id="contact">Others</a>
 </div>
-<h2>Hey there,</h2>
+
+
+<h2>Hey there</h2>
 <p >GPAT pattern for year 2020 has been given in the page and probably same pattern will be followed in next year GPAT 2021.
 Few Important topics that every GPAT aspirant should know:
 </p>

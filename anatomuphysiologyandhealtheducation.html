@@ -1,52 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title> Pharma Vision Layout </title>
+  <title> Entrance exams </title>
+</head>
 <meta charset="utf-8">
-<meta name="viewport"
-content="width=device-width, initial-scale="1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-*{box-sizing: border-box;
+{
+padding:0;
+margin:0;
 }
-body { margin: 0;
+
+
+
+body
+{
+background-image: url(Background.jpg);
+background-color: #cccccc;
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
-/*Style the header*/
-.header {background-color: #f1f1f1;
+
+.header {background-color: ;
 padding: 20px;
 text-align: center;
 }
-/* Style the top navigation bar */
-.topnav {
-overflow: hidden;
-background-color: #333;
-}
-/* Style the topnav links */
-.topnav a {
-float: left;
-display: block;
-color: #f2f2f2;
+.menu-bar
+{
+background: rgb(50, 100, 0);
 text-align: center;
-padding: 14px 16px;
+}
+.menu-bar ul
+{
+display: inline-flex;
+list-style: none;
+color: #fff
+}
+.menu-bar ul li
+{
+width: 100px;
+margin: 5px;
+padding: 10px;
+}
+.menu-bar ul li a
+{text-decoration: none;
+color: #fff}
+.active, .menu-bar ul li:hover
+{
+background: #2bab0d;
+border-radius: 3px;
+}
+.menu-bar .fa
+{ margin-left: 8px;
+}
+
+#mySidenav a {
+position: absolute;
+left: -140px;
+transition: 0.3s;
+padding: 15px;
+width: 150px;
 text-decoration: none;
+font-size: 20px;
+color: white;
+border-radius: 0 5px 5px 0;
 }
-/* Change color on hover */
-.topnav a:hover {
-background-color: #ddd;
-color: Blue;
+#mySidenav a:hover {
+left: 0;
+}
+#about {
+top: 270px;
+background-color: #f44336;
+}
+#blog {
+top: 370px;
+background-color: #555;
+}
+#projects {
+top: 470px;
+background-color: #2196F3;
+}
+#contact {
+top: 570px;
+background-color: #4CAF50;
 }
 
 
+h3
+{background-color: Pink;
+color: Black;
+width: 80%;
+margin: 80px;
+padding:20px;}
 ul.a
 {background-color: Pink;
 color: Blue;
-width: 800px;
-margin: 20px;
+width: 80%;
+margin: 80px;
 padding:20px;}
 
 ul.b
 {background-color: lightblue;
 color: Red;
-width: 700px;
+width: 75%;
 margin-left: 50px;
 padding: 20px;
 }
@@ -54,34 +114,39 @@ padding: 20px;
 ul.c
 {background-color: lightgreen;
 color:Black;
-width: 600px;
+width: 70%;
 margin-left: 50px;
 padding:20px ;
 }
 
 </style>
-</head>
 <body>
-<div class="header">
+
+  <div class="header">
   <h1> Pharma Vision- Syllabus </h1>
 
 
 <p> One should study in detail to have command over all basic concepts </p>
 </div>
+<div class="menu-bar">
+  <ul>
 
-<div class="topnav">
-
-<a href="index.html"> Main page </a>
-<a href="#"> Notes </a>
-<a href="#"> Points to be remembered </a>
-<a href="#"> Study outline </a>
-<a href="#"> Reference </a>
-
+  <li ><a href="index.html"> Main page </a></li>
+  <li><a href="#"> Notes </a> </li>
+  <li><a href="#"> Points to be remembered </a></a></li>
+  <li><a href="#"> Study outline </a></li>
+  <li><a href="#"> Reference </a></li>
 </div>
 
+<div id="mySidenav" class="sidenav">
+  <a href="meliorate.html" id="about">Aptitude </a>
+  <a href="pharmavision.html" id="blog">Gov. Exam</a>
+  <a href="smallbreak.html" id="projects">MBA EE</a>
+  <a href="thinkingpot.html" id="contact">Others</a>
+</div>
 
 <h3> GPAT- Human Anatomy, Physiology and Health education  </h3>
-
+<ul class="a">
 <li><a href="#">Anatomy, Physiology and Health Education</a></li>
 <ul class="b">
 
@@ -198,6 +263,7 @@ padding:20px ;
   <li><a href="#">Spleen and its functions</a></li>
 </ul>
 
+</ul>
 </ul>
 
 </body>
